@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <title>My Work-Portfolio</title>
 </head>
 <body>
+    
+    <!-- header -->
     <div class="header">
         <div class="header-title">
             <img src="img/logo.svg">
         </div>
         <div class="header-list">
             <ul>
-                <li>About</li>
-                <li>Works</li>
-                <li>News</li>
-                <li>Contact</li>
-                <li><a href="https://www.instagram.com/?hl=ja"><img src="img/icon-instagram.png" alt="インスタグラムのアイコン"></a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Works">Works</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="https://www.instagram.com/?hl=ja" target="_blank"><img src="img/icon-instagram.png" alt="インスタグラムのアイコン"></a></li>
             </ul>
         </div>
     </div>
 
     <main>
-        <div class="main-visual">
-            <img src="img/mainvisual-pc.jpg" alt="背景">
+
+        <!-- 背景画像 -->
+        <div class="mainvisual">
+            <img src="img/mainvisual-pc.jpg" alt="背景画像">
         </div>
 
-        <div class="wrapper">
+        <!-- About -->
+        <section id="About" class="wrapper">
             <h2>About</h2>
             <div class="contents-about">
                 <ul>
@@ -41,11 +47,12 @@
                 </ul>
                 <p>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
             </div>
-        </div>
+        </section>
 
-        <div class="wrapper">
+        <!-- Works -->
+        <section id="Works" class="wrapper">
             <h2>Works</h2>
-            <div class="contents-works">
+            <div class="works">
                 <img src="img/works1.jpg" alt="1枚目の写真">
                 <img src="img/works2.jpg" alt="2枚目の写真">
                 <img src="img/works3.jpg" alt="3枚目の写真">
@@ -53,20 +60,22 @@
                 <img src="img/works5.jpg" alt="5枚目の写真">
                 <img src="img/works6.jpg" alt="6枚目の写真">
             </div>
-        </div>
+        </section>
 
-        <div class="wrapper_news">
+        <!-- News -->
+        <section class="wrapper_news" id="News">
             <h2>News</h2>
             <ul>
                 <li>2020.XX.XX<span>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</span></li>            
-                <li> 2020.XX.XX<span>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</span></li>
-                <li> 2019.XX.XX<span>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</span></li>
+                <li>2020.XX.XX<span>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</span></li>
+                <li>2019.XX.XX<span>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</span></li>
                 <li>2019.XX.XX<span>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</span></li>
                 <li>2019.XX.XX<span>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</span></li>
             </ul>
-        </div>
+        </section>
 
-        <form action="#" method="POST">
+        <!-- form -->
+        <form action="#" method="POST" id="Contact">
             <h2>Contact</h2>
             <div class="item">
                 <p>NAME</p>
@@ -83,13 +92,14 @@
             <div class="send">
              <input type="submit" value="送信">
             </div>       
-        </div>
+        </form>
+
     </main>
 
+    <!-- footer -->
     <footer>
         <p>© 2020 My Work</p>
     </footer>
-
     
 </body>
 </html>
